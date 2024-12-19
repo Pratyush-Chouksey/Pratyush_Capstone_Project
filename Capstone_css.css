@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+@font-face {
+    font-family: 'Porter Sans Block';
+    src: url('Fonts/Porter\ Sans\ Block\ Font.ttf') format('truetype');
+}
+
+body{
+    background: #E8F4E7;
+    margin: 0;
+    padding: 0;
+}
+.landing_page {
+    height:4231px;
+    padding: 0px 48px 0px 48px;
+}
+.header {
+    display: flex;
+    height: 80px;
+    /* padding: 16px 0px 16px 0px; */
+    border-bottom:1px;
+    align-items: center;
+    justify-content: space-between;
+}
+.page_logo{
+    width: 459px;
+    height: 48px;
+}
+#logo{
+    font-family: Porter Sans Block;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 42px;
+    text-align: left;
+    color: #1C221B;
+    margin: 0;
+}
+.page_links{
+    display: flex;
+    height: 32px;
+    gap: 32px;
+}
+.page_link_name{
+    font-family: "Calistoga", serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    text-decoration: none;
+    color: #1C221B;
+}
+.page_link_name:hover{
+    color: #2b82cb;
+}
+.divider{
+    border-bottom: 1px solid black;
+    margin-left: -48px;
+    margin-right: -48px;
+
+}
