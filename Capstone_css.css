@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @font-face {
     font-family: 'Porter Sans Block';
     src: url('Fonts/Porter\ Sans\ Block\ Font.ttf') format('truetype');
@@ -10,20 +11,14 @@ body{
     padding: 0;
 }
 .landing_page {
-    height:4231px;
     padding: 0px 48px 0px 48px;
 }
 .header {
     display: flex;
     height: 80px;
-    /* padding: 16px 0px 16px 0px; */
     border-bottom:1px;
     align-items: center;
     justify-content: space-between;
-}
-.page_logo{
-    width: 459px;
-    height: 48px;
 }
 #logo{
     font-family: Porter Sans Block;
@@ -36,7 +31,6 @@ body{
 }
 .page_links{
     display: flex;
-    height: 32px;
     gap: 32px;
 }
 .page_link_name{
@@ -50,6 +44,8 @@ body{
 }
 .page_link_name:hover{
     color: #2b82cb;
+    transition: ease-in-out 0.2s;
+    transform: scale(1.35);
 }
 .divider{
     border-bottom: 1px solid black;
@@ -57,19 +53,16 @@ body{
     margin-right: -48px;
 }
 .container{
-    height: 3983px;
     padding: 48px 0px 48px 0px;
     margin: 0;
 }
 .Main_content{
-    height: 3887px;
     margin: 0;
 }
 .hero_img_and_text{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 1152px;
     padding: 96px 0px 96px 0px;
     gap: 48px;
     border: 0px 0px 1px 0px;
@@ -77,7 +70,6 @@ body{
     margin: 0;
 }
 .hero_text{
-    height: 240px;
     font-family: "Calistoga", serif;
     font-size: 120px;
     font-weight: 400;
@@ -104,65 +96,46 @@ body{
 }
 
 #hero_img{
-    height: 672px;
-    border: 1px 0px 0px 0px;
-    border-top: 1px solid #000000;
     border-radius: 20px;
 }
-
-/* Responsive design: Adjust for tablets (768px and below) */
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 16px;
-    }
-
-    #logo {
-        font-size: 28px;
-    }
-
-    .page_links {
-        gap: 8px;
-    }
-
-    .page_link_name {
-        font-size: 18px;
-    }
-
-    .hero_text {
-        font-size: 48px;
-    }
+.project_overview{
+    border: 0px 0px 1px 0px;
+}
+.row{
+    display: flex;
+    padding: 0px 0px 48px 0px;
+    gap: 48px;
+    justify-content: center;
+}
+#row1{
+    padding: 48px 0px 48px 0px;
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+.project_img{
+    border-radius: 10px;
 }
 
-/* Responsive design: Adjust for mobile devices (480px and below) */
-@media (max-width: 480px) {
-    .header {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #logo {
-        font-size: 24px;
-        text-align: center;
-    }
-
-    .page_links {
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
-    }
-
-    .page_link_name {
-        font-size: 16px;
-    }
-
-    .hero_text {
-        font-size: 32px;
-        line-height: 40px;
-    }
-
-    #hero_img {
-        max-width: 300px;
-    }
+.project_no{
+    font-family: "Courier Prime", serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+.project_name{
+    font-family: "Courier Prime", serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+.project:hover{
+    transition: ease-in-out 0.3s;
+    transform: scale(1.12);
+    cursor: pointer;
 }
