@@ -139,3 +139,16 @@ body{
     transform: scale(1.12);
     cursor: pointer;
 }
+.about_section {
+    display: flex;
+    justify-content: center;
+    padding: 96px 0px 96px 0px;
+}
+.about{
+    font-family: "Calistoga", serif;
+    max-width: 900px;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 52px;
+    text-align: center;
+}
