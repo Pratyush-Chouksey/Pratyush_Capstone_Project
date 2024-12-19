@@ -152,3 +152,80 @@ body{
     line-height: 52px;
     text-align: center;
 }
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 0px 48px 0px;
+    gap: 24px;
+    border: 0px 0px 1px 0px;
+}
+.project_highlight{
+    max-width: 900px;
+    font-family: "Calistoga", serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    color: #1C221B;
+}
+.about_team{
+    display: flex;
+    max-width: 900px;
+    gap: 48px;
+}
+.about_team_text{
+    font-family: "Courier Prime", serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+}
+.innerContainer{
+    width:268px;
+}
+.impact{
+    display: flex;
+    justify-content: space-between;
+    padding: 48px 0px 48px 0px;
+}
+.Impact_Metrics{
+    width: 648px;
+    font-family: "Calistoga", serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+}
+.impact_container{
+    width: 648px;
+}
+.impact_row{
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+}
+.stat_container{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0px 48px 0px;
+    gap: 8px;
+    border-top: 1px solid #00000029
+}
+.text1{
+    font-family: "Calistoga", serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 52px;
+    text-align: left;
+    margin: 0;
+}
+.text2{
+    font-family: "Courier Prime", serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin: 0;
+}
