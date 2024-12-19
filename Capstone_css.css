@@ -55,5 +55,114 @@ body{
     border-bottom: 1px solid black;
     margin-left: -48px;
     margin-right: -48px;
+}
+.container{
+    height: 3983px;
+    padding: 48px 0px 48px 0px;
+    margin: 0;
+}
+.Main_content{
+    height: 3887px;
+    margin: 0;
+}
+.hero_img_and_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1152px;
+    padding: 96px 0px 96px 0px;
+    gap: 48px;
+    border: 0px 0px 1px 0px;
+    background: #E8F4E7;
+    margin: 0;
+}
+.hero_text{
+    height: 240px;
+    font-family: "Calistoga", serif;
+    font-size: 120px;
+    font-weight: 400;
+    line-height: 120px;
+    text-align: center;
+    color: #1C221B;
+    margin: 0;
+    animation: zoomInFade 2s ease-out ;
+}
 
+@keyframes zoomInFade {
+    0% {
+        opacity: 0; 
+        transform: scale(0.7);
+    }
+    50% {
+        opacity: 0.8;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#hero_img{
+    height: 672px;
+    border: 1px 0px 0px 0px;
+    border-top: 1px solid #000000;
+    border-radius: 20px;
+}
+
+/* Responsive design: Adjust for tablets (768px and below) */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    #logo {
+        font-size: 28px;
+    }
+
+    .page_links {
+        gap: 8px;
+    }
+
+    .page_link_name {
+        font-size: 18px;
+    }
+
+    .hero_text {
+        font-size: 48px;
+    }
+}
+
+/* Responsive design: Adjust for mobile devices (480px and below) */
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .page_links {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .page_link_name {
+        font-size: 16px;
+    }
+
+    .hero_text {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    #hero_img {
+        max-width: 300px;
+    }
 }
