@@ -260,7 +260,6 @@ body {
     gap: 24px;
     overflow-x: auto;
     scrollbar-width: none;
-    -ms-overflow-style: none;
 }
 
 .testimonialCards::-webkit-scrollbar {
